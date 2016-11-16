@@ -36,6 +36,8 @@ plot(data_sub$datetime,data_sub$Voltage,type="l",ylab="Voltage",xlab="datetime")
 plot(data_sub$datetime, data_sub$Sub_metering_1, type="l", ylab="Energy Submetering", xlab="Days")
 lines(data_sub$datetime, data_sub$Sub_metering_2, type="l", col="red")
 lines(data_sub$datetime, data_sub$Sub_metering_3, type="l", col="blue")
+legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lwd=2.5,col=c("black", "red", "blue"))
+legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lwd=2.5,col=c("black", "red", "blue"))
 plot(data_sub$datetime,data_sub$Global_reactive_power,type="l",ylim=c(0,0.5),ylab="Global_reactive_power",xlab="datetime")
 dev.off()
 
